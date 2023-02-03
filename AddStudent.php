@@ -8,7 +8,9 @@
     }
 
     else{
+
       include 'config/connection.php';
+      // start of queries
       $sql="SELECT * FROM user WHERE id='$id'";
       $qry=mysqli_query($conn,$sql);
       $row=mysqli_fetch_array($qry);
@@ -17,7 +19,7 @@
     ?>
 
 <body class="hold-transition sidebar-mini layout-fixed">
-  
+
 <div class="wrapper">
 
 
